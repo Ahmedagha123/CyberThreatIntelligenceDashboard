@@ -1,26 +1,26 @@
-﻿-- إنشاء قاعدة البيانات
+﻿-- Create DataBase
 CREATE DATABASE CyberThreatIntelDB;
 GO
 
--- استخدام قاعدة البيانات
+-- Use DataBase
 USE CyberThreatIntelDB;
 GO
 
--- جدول التصنيفات (Categories)
+-- (Categories)
 CREATE TABLE Categories (
     CategoryID INT PRIMARY KEY IDENTITY(1,1),
     CategoryName VARCHAR(50) NOT NULL
 );
 GO
 
--- جدول الدول (Countries)
+--  (Countries)
 CREATE TABLE Countries (
     CountryID INT PRIMARY KEY IDENTITY(1,1),
     CountryName VARCHAR(100) NOT NULL
 );
 GO
 
--- جدول مصادر البيانات (Sources)
+--  (Sources)
 CREATE TABLE Sources (
     SourceID INT PRIMARY KEY IDENTITY(1,1),
     SourceName VARCHAR(100) NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE Sources (
 );
 GO
 
--- جدول التهديدات (Threats)
+--  (Threats)
 CREATE TABLE Threats (
     ThreatID INT PRIMARY KEY IDENTITY(1,1),
     ThreatName VARCHAR(100) NOT NULL,
